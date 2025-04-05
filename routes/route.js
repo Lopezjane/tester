@@ -7,6 +7,7 @@ let exams = [
   { id: 2, name: 'Science Exam', date: '2025-03-26' }
 ];
 
+//laygan
 // Route to get a message
 router.get('/exam-group', (req, res) => 
   res.json({ message: "Group F API" })
@@ -17,6 +18,7 @@ router.get('/exams', (req, res) =>
   res.json(exams)
 );
 
+//edem
 // Route to update an exam
 router.put('/exams/:id', (req, res) => {
   const examId = parseInt(req.params.id);
@@ -32,6 +34,7 @@ router.put('/exams/:id', (req, res) => {
   }
 });
 
+//villarta
 // Route to create a new exam
 router.post('/exams', (req, res) => {
   const newExam = req.body;
