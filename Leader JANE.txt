@@ -1,0 +1,57 @@
+Leader: JANE
+
+Features:
+POST/exams : Villarta
+GET/exams  : Laygan
+PUT/exams  : Edem
+ 
+Merged Conflict: ypil-branch and wenceslao-branch conflicted with main. Resolved!
+
+
+Exam Group  repository
+
+jane:
+npm init -y (package.json)
+npm install (package-lock.json)
+npm install express
+npm install express body-parser
+
+
+README.md (jane update the file with message 
+(feat:Update README)
+
+
+test the code
+GET /exam-group:
+URL: http://localhost:3000/exam-group
+
+Response: { "message": "Group F API" }
+
+GET /exams:
+URL: http://localhost:3000/exams
+
+Response: The list of exams.
+
+POST /exams:
+URL: http://localhost:3000/exams
+
+Body (JSON):
+body c opy this
+{
+  "name": "History Exam",
+  "date": "2025-04-01"
+}
+Response: The newly created exam.
+
+PUT /exams/{id}:
+URL: http://localhost:3000/exams/1
+
+Body (JSON):
+
+json copy this
+{
+  "name": "Updated Math Exam",
+  "date": "2025-03-30"
+}
+Response: The updated exam.
+	
